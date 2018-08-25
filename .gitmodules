@@ -1,0 +1,3 @@
+[submodule "engine"]
+	path = engine
+	url = git://github.com/EvgeniiDemin/2DGameEngine.git
