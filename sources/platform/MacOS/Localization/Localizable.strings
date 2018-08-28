@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  iOS
+
+  Created by Eugene on 29/03/15.
+
+*/
+
+"MainWindowTitle" = "WC2";
+"AboutMenuItem" = "About WC2";
+"ToggleFullScreenMenuItem" = "Toggle Full Screen";
+"QuitGameMenuItem" = "Quit WC2";

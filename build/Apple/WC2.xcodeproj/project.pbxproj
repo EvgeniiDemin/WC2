@@ -11,6 +11,7 @@
 		441AF1D321333F7C00206977 /* WC2_Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 441AF1CF21333F7C00206977 /* WC2_Info.plist */; };
 		441AF1D421333F7C00206977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 441AF1D021333F7C00206977 /* Assets.xcassets */; };
 		4499F73D2135D29D00D725C2 /* libEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4499F7122135C92C00D725C2 /* libEngine.a */; };
+		4499F7442135E3DA00D725C2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4499F7432135E3DA00D725C2 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		441AF1D121333F7C00206977 /* WC2.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = WC2.entitlements; sourceTree = "<group>"; };
 		44329C612133337C00F9629A /* WC2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WC2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4499F70D2135C92C00D725C2 /* Engine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Engine.xcodeproj; path = ../../engine/build/Apple/Engine/Engine.xcodeproj; sourceTree = "<group>"; };
+		4499F7432135E3DA00D725C2 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +56,9 @@
 		441AF1CC21333F7C00206977 /* MacOS */ = {
 			isa = PBXGroup;
 			children = (
-				441AF1CD21333F7C00206977 /* main.m */,
+				4499F7422135E3DA00D725C2 /* Localization */,
 				441AF1CE21333F7C00206977 /* SupportingFiles */,
+				441AF1CD21333F7C00206977 /* main.m */,
 			);
 			name = MacOS;
 			path = ../../sources/platform/MacOS;
@@ -102,6 +105,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4499F7422135E3DA00D725C2 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				4499F7432135E3DA00D725C2 /* Localizable.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				441AF1D421333F7C00206977 /* Assets.xcassets in Resources */,
+				4499F7442135E3DA00D725C2 /* Localizable.strings in Resources */,
 				441AF1D321333F7C00206977 /* WC2_Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
