@@ -10,7 +10,25 @@
 		441AF1D221333F7C00206977 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 441AF1CD21333F7C00206977 /* main.m */; };
 		441AF1D321333F7C00206977 /* WC2_Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 441AF1CF21333F7C00206977 /* WC2_Info.plist */; };
 		441AF1D421333F7C00206977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 441AF1D021333F7C00206977 /* Assets.xcassets */; };
+		4499F73D2135D29D00D725C2 /* libEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4499F7122135C92C00D725C2 /* libEngine.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4499F7112135C92C00D725C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4499F70D2135C92C00D725C2 /* Engine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 441AF1DE2135C69F00206977;
+			remoteInfo = Engine;
+		};
+		4499F7132135C94100D725C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4499F70D2135C92C00D725C2 /* Engine.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 441AF1DD2135C69F00206977;
+			remoteInfo = Engine;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		441AF1CD21333F7C00206977 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -18,6 +36,7 @@
 		441AF1D021333F7C00206977 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		441AF1D121333F7C00206977 /* WC2.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = WC2.entitlements; sourceTree = "<group>"; };
 		44329C612133337C00F9629A /* WC2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WC2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4499F70D2135C92C00D725C2 /* Engine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Engine.xcodeproj; path = ../../engine/build/Apple/Engine/Engine.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4499F73D2135D29D00D725C2 /* libEngine.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,8 +74,10 @@
 		44329C582133337B00F9629A = {
 			isa = PBXGroup;
 			children = (
+				4499F70D2135C92C00D725C2 /* Engine.xcodeproj */,
 				441AF1CC21333F7C00206977 /* MacOS */,
 				44329C622133337C00F9629A /* Products */,
+				4499F73C2135D29D00D725C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +87,21 @@
 				44329C612133337C00F9629A /* WC2.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4499F70E2135C92C00D725C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4499F7122135C92C00D725C2 /* libEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4499F73C2135D29D00D725C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,6 +118,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4499F7142135C94100D725C2 /* PBXTargetDependency */,
 			);
 			name = WC2;
 			productName = WC2;
@@ -112,12 +150,28 @@
 			mainGroup = 44329C582133337B00F9629A;
 			productRefGroup = 44329C622133337C00F9629A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4499F70E2135C92C00D725C2 /* Products */;
+					ProjectRef = 4499F70D2135C92C00D725C2 /* Engine.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				44329C602133337C00F9629A /* WC2 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4499F7122135C92C00D725C2 /* libEngine.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEngine.a;
+			remoteRef = 4499F7112135C92C00D725C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		44329C5F2133337C00F9629A /* Resources */ = {
@@ -141,6 +195,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4499F7142135C94100D725C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Engine;
+			targetProxy = 4499F7132135C94100D725C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		44329C702133338000F9629A /* Debug */ = {
