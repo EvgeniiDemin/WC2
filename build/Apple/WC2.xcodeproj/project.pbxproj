@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		441AF1D221333F7C00206977 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 441AF1CD21333F7C00206977 /* main.m */; };
+		441AF1D221333F7C00206977 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 441AF1CD21333F7C00206977 /* main.mm */; };
 		441AF1D321333F7C00206977 /* WC2_Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 441AF1CF21333F7C00206977 /* WC2_Info.plist */; };
 		441AF1D421333F7C00206977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 441AF1D021333F7C00206977 /* Assets.xcassets */; };
 		4499F73D2135D29D00D725C2 /* libEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4499F7122135C92C00D725C2 /* libEngine.a */; };
@@ -32,7 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		441AF1CD21333F7C00206977 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		441AF1CD21333F7C00206977 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		441AF1CF21333F7C00206977 /* WC2_Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WC2_Info.plist; sourceTree = "<group>"; };
 		441AF1D021333F7C00206977 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		441AF1D121333F7C00206977 /* WC2.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = WC2.entitlements; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			children = (
 				4499F7422135E3DA00D725C2 /* Localization */,
 				441AF1CE21333F7C00206977 /* SupportingFiles */,
-				441AF1CD21333F7C00206977 /* main.m */,
+				441AF1CD21333F7C00206977 /* main.mm */,
 			);
 			name = MacOS;
 			path = ../../sources/platform/MacOS;
@@ -202,7 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				441AF1D221333F7C00206977 /* main.m in Sources */,
+				441AF1D221333F7C00206977 /* main.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +334,10 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../engine/include",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/../../sources/platform/MacOS/SupportingFiles/WC2_Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -353,6 +357,10 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../engine/include",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/../../sources/platform/MacOS/SupportingFiles/WC2_Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
