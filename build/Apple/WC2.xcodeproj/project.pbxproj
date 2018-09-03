@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		441AB919213DB81700ADCEB7 /* wc2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 441AB917213DB81700ADCEB7 /* wc2.cpp */; };
 		441AF1D221333F7C00206977 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 441AF1CD21333F7C00206977 /* main.mm */; };
 		441AF1D321333F7C00206977 /* WC2_Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 441AF1CF21333F7C00206977 /* WC2_Info.plist */; };
 		441AF1D421333F7C00206977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 441AF1D021333F7C00206977 /* Assets.xcassets */; };
@@ -32,6 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		441AB917213DB81700ADCEB7 /* wc2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wc2.cpp; path = ../../sources/wc2.cpp; sourceTree = "<group>"; };
+		441AB918213DB81700ADCEB7 /* wc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wc2.h; path = ../../sources/wc2.h; sourceTree = "<group>"; };
+		441AB91A213DB86900ADCEB7 /* wc2_pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = wc2_pch.h; path = ../../sources/wc2_pch.h; sourceTree = "<group>"; };
 		441AF1CD21333F7C00206977 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		441AF1CF21333F7C00206977 /* WC2_Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WC2_Info.plist; sourceTree = "<group>"; };
 		441AF1D021333F7C00206977 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +57,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		441AB916213DB7D900ADCEB7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				441AB91A213DB86900ADCEB7 /* wc2_pch.h */,
+				441AB918213DB81700ADCEB7 /* wc2.h */,
+				441AB917213DB81700ADCEB7 /* wc2.cpp */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
 		441AF1CC21333F7C00206977 /* MacOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,11 +92,15 @@
 			isa = PBXGroup;
 			children = (
 				4499F70D2135C92C00D725C2 /* Engine.xcodeproj */,
-				441AF1CC21333F7C00206977 /* MacOS */,
-				44329C622133337C00F9629A /* Products */,
 				4499F73C2135D29D00D725C2 /* Frameworks */,
+				441AF1CC21333F7C00206977 /* MacOS */,
+				441AB916213DB7D900ADCEB7 /* Sources */,
+				44329C622133337C00F9629A /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
 		};
 		44329C622133337C00F9629A /* Products */ = {
 			isa = PBXGroup;
@@ -202,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				441AB919213DB81700ADCEB7 /* wc2.cpp in Sources */,
 				441AF1D221333F7C00206977 /* main.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
